@@ -1,0 +1,5 @@
+#DataSource
+spring:
+  datasource:
+    url: jdbc:sqlite:identifier.sqlite
+    driver-class-name: org.sqlite.JDBC
