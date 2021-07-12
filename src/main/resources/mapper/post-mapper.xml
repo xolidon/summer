@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xolidon.summer.post.mapper.PostMapper">
+	<select id="getPostList" resultType="com.xolidon.summer.post.entity.Post">
+		SELECT * FROM hr_post
+	</select>
+
+	<select id="countPost" resultType="Int">
+		SELECT COUNT(*) FROM hr_post
+	</select>
+
+	<insert id="addPost" parameterType="com.xolidon.summer.post.entity.Post">
+
+	</insert>
+</mapper>

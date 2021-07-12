@@ -17,12 +17,16 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-jooq")
+
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     implementation("org.springframework.boot:spring-boot-starter-web")
+
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("org.xerial:sqlite-jdbc:3.25.2")
+    implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1")
+    implementation("org.mariadb.jdbc:mariadb-java-client:2.6.0")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

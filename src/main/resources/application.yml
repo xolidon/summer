@@ -1,5 +1,9 @@
 #DataSource
 spring:
   datasource:
-    url: jdbc:sqlite:identifier.sqlite
-    driver-class-name: org.sqlite.JDBC
+    url: jdbc:mysql://210.116.118.130:3306/house_repair
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: house_repair
+    password: house_repair@1234!
+
+mybatis.mapper-locations: mapper/*.xml
