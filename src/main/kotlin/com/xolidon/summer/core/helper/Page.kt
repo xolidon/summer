@@ -1,4 +1,4 @@
-package com.xolidon.summer.framework.helper
+package com.xolidon.summer.core.helper
 
 class Page<T> {
     lateinit var list: List<T>

@@ -6,4 +6,12 @@ spring:
     username: house_repair
     password: house_repair@1234!
 
-mybatis.mapper-locations: mapper/*.xml
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+mybatis:
+  mapper-locations: mapper/*.xml
+  config-location: classpath:config/mybatis-config.xml
+

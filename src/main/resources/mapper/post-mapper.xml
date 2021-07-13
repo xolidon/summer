@@ -5,7 +5,7 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.xolidon.summer.post.mapper.PostMapper">
-	<select id="getPostList" resultType="com.xolidon.summer.post.entity.Post">
+	<select id="getPostList" resultType="Post">
 		SELECT * FROM hr_post
 	</select>
 
@@ -13,7 +13,7 @@
 		SELECT COUNT(*) FROM hr_post
 	</select>
 
-	<insert id="addPost" parameterType="com.xolidon.summer.post.entity.Post">
+	<insert id="addPost" parameterType="Post">
 
 	</insert>
 </mapper>

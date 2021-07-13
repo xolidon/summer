@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "HTTP://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <settings>
+        <setting name="cacheEnabled"                value="true"></setting> 	<!-- default : true -->
+        <setting name="lazyLoadingEnabled"          value="false" ></setting>   <!-- default : true -->
+        <setting name="multipleResultSetsEnabled"   value="true" ></setting> 	<!-- default : true -->
+        <setting name="useColumnLabel"              value="true" ></setting>   	<!-- default : true -->
+        <setting name="useGeneratedKeys"            value="false" ></setting> 	<!-- default : false -->
+        <setting name="autoMappingBehavior"         value="PARTIAL" ></setting> <!-- default : PARTIAL -->
+        <setting name="defaultExecutorType"         value="SIMPLE" ></setting>  <!-- default : SIMPLE : batch 처리 가능하게 변경 -->
+        <setting name="defaultStatementTimeout"     value="25000" ></setting>	<!-- default : none -->
+        <setting name="mapUnderscoreToCamelCase"    value="true"></setting>     <!-- default : false -->
+    </settings>
+	
+    <typeAliases>
+        <package name="com.xolidon.summer.post.entity" />
+    </typeAliases>
+</configuration>
